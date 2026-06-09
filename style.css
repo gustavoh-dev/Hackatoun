@@ -1,0 +1,132 @@
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: #334155;
+  background-color: #f3fbff;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+#realMap {
+  z-index: 0;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.map-pin {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-pin__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #ffc300;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 6px rgba(255, 107, 107, 0.18);
+}
+
+.map-pin__label {
+  border-radius: 9999px;
+  background: rgba(0, 95, 143, 0.9);
+  padding: 0.28rem 0.72rem;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #ffffff;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.status-aguardando {
+  background: rgba(255, 195, 0, 0.18);
+  color: #9a6b00;
+}
+
+.status-em-atendimento {
+  background: rgba(0, 180, 216, 0.12);
+  color: #0077b6;
+}
+
+.status-resolvido {
+  background: rgba(0, 119, 182, 0.12);
+  color: #005f8f;
+}
+
+.priority-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.priority-baixa {
+  background: rgba(0, 180, 216, 0.12);
+  color: #0077b6;
+}
+
+.priority-media {
+  background: rgba(255, 195, 0, 0.2);
+  color: #9a6b00;
+}
+
+.priority-alta {
+  background: rgba(255, 107, 107, 0.18);
+  color: #c24141;
+}
+
+.change-status-btn {
+  background: #0077b6;
+}
+
+.change-status-btn:hover {
+  background: #005f8f;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.75);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
